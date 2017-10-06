@@ -153,7 +153,7 @@ public class SceneA : GameScene {
 
         StageData stage6 = new StageData();
         stage6.monsId = new int[]{ 0};
-        stage6.monsPos = new Vector3[] { new Vector3(-12f, 0.2f, 24f)};
+        stage6.monsPos = new Vector3[] { new Vector3(-12f, 0.2f, 20f)};
         stage6.monsNum = new int[] { 1 };
         stage6.cond = new int[] { 2};
         stage6.condParm = new int[]{ 0 };

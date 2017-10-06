@@ -33,7 +33,7 @@ public class Player : BaseObject {
         bullets[0].num = 1;
         bullets[0].maxNum = 30;
         bullets[0].curNum = 30;
-		bullets[0].speed = 30;
+		bullets[0].speed = 20;
         
 
         bullets[1] = new BulletData();

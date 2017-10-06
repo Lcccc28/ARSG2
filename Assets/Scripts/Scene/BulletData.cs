@@ -2,7 +2,7 @@
 
     public int atk = 10; // 攻击力
     public int num = 0; // 一次射击的子弹数量
-	public float speed = 20f; // 子弹速度
+	public float speed = 10f; // 子弹速度
 	public float lifeTime = 5f; // 子弹生存时间
     public int curNum = 0; // 当前子弹数
     public int maxNum = 30; // 最大子弹数量

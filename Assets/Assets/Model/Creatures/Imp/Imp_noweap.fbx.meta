@@ -204,7 +204,7 @@ ModelImporter:
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
-    animationWrapMode: 0
+    animationWrapMode: 2
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
@@ -413,7 +413,7 @@ ModelImporter:
       name: Move
       takeName: Anim_1
       firstFrame: 30
-      lastFrame: 67
+      lastFrame: 66
       wrapMode: 2
       orientationOffsetY: 0
       level: 0
@@ -614,8 +614,8 @@ ModelImporter:
     - serializedVersion: 16
       name: Hit
       takeName: Anim_1
-      firstFrame: 662
-      lastFrame: 701
+      firstFrame: 661
+      lastFrame: 699
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
