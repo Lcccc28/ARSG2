@@ -123,6 +123,7 @@ public class Player : BaseObject {
     public void ChangeBullet() {
         changeBulletTimer = 0.1f;
         isChangeBullet = true;
+		AudioManager.Instance.PlaySound("sound_chg_bullet");
     }
 
     public void ChangeGun(int index) {
