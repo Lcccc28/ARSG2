@@ -29,19 +29,19 @@ public class UnityPlayerProxyActivity extends Activity
         BluetoothAdapter mBluetoothAdapter = BluetoothAdapter  
                 .getDefaultAdapter();  
         if (mBluetoothAdapter == null) {  
-            Toast.makeText(this, "±¾»úÃ»ÓĞÕÒµ½À¶ÑÀÓ²¼ş»òÇı¶¯£¡", Toast.LENGTH_SHORT).show();  
+            Toast.makeText(this, "æœ¬æœºæ²¡æœ‰æ‰¾åˆ°è“ç‰™ç¡¬ä»¶æˆ–é©±åŠ¨ï¼", Toast.LENGTH_SHORT).show();  
             finish();  
         }  
-        // Èç¹û±¾µØÀ¶ÑÀÃ»ÓĞ¿ªÆô£¬Ôò¿ªÆô  
+        // å¦‚æœæœ¬åœ°è“ç‰™æ²¡æœ‰å¼€å¯ï¼Œåˆ™å¼€å¯  
         if (!mBluetoothAdapter.isEnabled()) {  
-            // ÎÒÃÇÍ¨¹ıstartActivityForResult()·½·¨·¢ÆğµÄIntent½«»áÔÚonActivityResult()»Øµ÷·½·¨ÖĞ»ñÈ¡ÓÃ»§µÄÑ¡Ôñ£¬±ÈÈçÓÃ»§µ¥»÷ÁËYes¿ªÆô£¬  
-            // ÄÇÃ´½«»áÊÕµ½RESULT_OKµÄ½á¹û£¬  
-            // Èç¹ûRESULT_CANCELEDÔò´ú±íÓÃ»§²»Ô¸Òâ¿ªÆôÀ¶ÑÀ  
+            // æˆ‘ä»¬é€šè¿‡startActivityForResult()æ–¹æ³•å‘èµ·çš„Intentå°†ä¼šåœ¨onActivityResult()å›è°ƒæ–¹æ³•ä¸­è·å–ç”¨æˆ·çš„é€‰æ‹©ï¼Œæ¯”å¦‚ç”¨æˆ·å•å‡»äº†Yeså¼€å¯ï¼Œ  
+            // é‚£ä¹ˆå°†ä¼šæ”¶åˆ°RESULT_OKçš„ç»“æœï¼Œ  
+            // å¦‚æœRESULT_CANCELEDåˆ™ä»£è¡¨ç”¨æˆ·ä¸æ„¿æ„å¼€å¯è“ç‰™  
             Intent mIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);  
             startActivityForResult(mIntent, 1);  
-            // ÓÃenable()·½·¨À´¿ªÆô£¬ÎŞĞèÑ¯ÎÊÓÃ»§(Êµ»İÎŞÉùÏ¢µÄ¿ªÆôÀ¶ÑÀÉè±¸),ÕâÊ±¾ÍĞèÒªÓÃµ½android.permission.BLUETOOTH_ADMINÈ¨ÏŞ¡£  
+            // ç”¨enable()æ–¹æ³•æ¥å¼€å¯ï¼Œæ— éœ€è¯¢é—®ç”¨æˆ·(å®æƒ æ— å£°æ¯çš„å¼€å¯è“ç‰™è®¾å¤‡),è¿™æ—¶å°±éœ€è¦ç”¨åˆ°android.permission.BLUETOOTH_ADMINæƒé™ã€‚  
             // mBluetoothAdapter.enable();  
-            // mBluetoothAdapter.disable();//¹Ø±ÕÀ¶ÑÀ  
+            // mBluetoothAdapter.disable();//å…³é—­è“ç‰™  
         } else {
         	StartGame();
         }
@@ -63,9 +63,9 @@ public class UnityPlayerProxyActivity extends Activity
         if (requestCode == 1) {  
             if (resultCode == RESULT_OK) {  
             	
-                Toast.makeText(this, "À¶ÑÀÒÑ¾­¿ªÆô", Toast.LENGTH_SHORT).show();  
+                Toast.makeText(this, "è“ç‰™å·²ç»å¼€å¯", Toast.LENGTH_SHORT).show();  
             } else if (resultCode == RESULT_CANCELED) {  
-                Toast.makeText(this, "²»ÔÊĞíÀ¶ÑÀ¿ªÆô", Toast.LENGTH_SHORT).show();  
+                Toast.makeText(this, "ä¸å…è®¸è“ç‰™å¼€å¯", Toast.LENGTH_SHORT).show();  
                 finish();  
             }  
         }  
