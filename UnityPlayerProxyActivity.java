@@ -1,6 +1,5 @@
-package com.sykj.arsg;
+package com.sykj.arsg2;
 
-import com.unity3d.player.*;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
@@ -48,7 +47,7 @@ public class UnityPlayerProxyActivity extends Activity
 	}
 	
 	private void StartGame() {
-		Intent intent = new Intent(this, com.sykj.arsg.UnityPlayerActivity.class);
+		Intent intent = new Intent(this, com.sykj.arsg2.UnityPlayerActivity.class);
 		intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
 		Bundle extras = getIntent().getExtras();
 		if (extras != null)
